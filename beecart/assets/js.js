@@ -1,5 +1,7 @@
-// const jsCode = `
-   function setPage() {
+
+export default function customJS() {
+  return `
+	function setPage() {
    
    document.getElementsByClassName('header-wrap')[0].style.top = 0;
    if(document.getElementsByClassName('trusted-seller-wrap').length > 0) {
@@ -41,7 +43,6 @@
      document.getElementsByClassName('trusted-seller-wrap')[0].remove();
     }
     setPage();
-   },100);
-  
-   
-  // true;`;  
+   },100);	
+`;
+}
