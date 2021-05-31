@@ -1,8 +1,8 @@
 function  getImageList() {
     return [
       {
-        url: 'https://github.com/sidhupk/api/raw/main/beecart/assets/offer1.jpg',
-        link: 'https://mydukaan.io/beecart/categories/shop-by-offers'
+        url: 'https://raw.githubusercontent.com/sidhupk/api/main/beecart/assets/bee%20cart%20Poster-01.jpg',
+        link: 'https://beecart.online/beecart/categories/oral-care'
       },
       {
         url: 'https://github.com/sidhupk/api/raw/main/beecart/assets/offer2.jpg',
