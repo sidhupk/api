@@ -1,4 +1,3 @@
-
 function setPage() {
    
    document.getElementsByClassName('header-wrap')[0].style.top = 0;
@@ -23,23 +22,33 @@ function setPage() {
         linkParent.insertBefore(img, divParent);        
      }
 
-     if(document.getElementById('coverPic') === null) {
-      
-        var coverImg = document.createElement("img");
-        coverImg.src = 'https://github.com/sidhupk/api/raw/main/beecart/assets/offer.jpg?time=20';
-        coverImg.setAttribute('id','coverPic');
-        var parentDiv = document.getElementsByClassName('main-container')[0];
-        var searchProdDiv = parentDiv.getElementsByClassName('product-search-bar-wrap')[0];
+     var imageArray = getImageList();
+
+     if(document.getElementById('coverPic') === null && imageArray && imageArray.length>0) {
         
-        parentDiv.insertBefore(coverImg, searchProdDiv);
+        var coverImg = document.createElement("img");        
+        var randomItem = imageArray[Math.floor(Math.random() * imageArray.length)];
+        coverImg.setAttribute('id','coverPic');
+        var parentDiv = document.getElementsByClassName('main-container')[0];        
+        var newLink = document.createElement("a");    
+        
+        newLink.setAttribute('id','coverPic');
+        newLink.setAttribute('class','cover-pic-link');
+        newLink.setAttribute('href',randomItem.link);
+
+        var searchProdDiv = parentDiv.getElementsByClassName('product-search-bar-wrap')[0];
+        parentDiv.insertBefore(newLink, searchProdDiv);        
+
+        var linkParent = parentDiv.getElementsByClassName('cover-pic-link')[0];
+        linkParent.innerHTML = "<img src='"+randomItem.url+"' />";
      }
    }
    setPage();
 
    setInterval(function() {
-    if(document.getElementsByClassName('trusted-seller-wrap').length > 0) {
+    if(document.getElementsByClassName('trusted-seller-wrap') && document.getElementsByClassName('trusted-seller-wrap').length > 0) {
      document.getElementsByClassName('trusted-seller-wrap')[0].remove();
     }
     setPage();
-   },100);	  
-
+   },100);
+  
