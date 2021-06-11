@@ -43,7 +43,7 @@ function setPage() {
         newLink.setAttribute('id','coverPic');
         newLink.setAttribute('class','cover-pic-link');
         newLink.setAttribute('href',randomItem.link);
-        newLink.style.marginTop = '3px';
+        newLink.style.marginTop = '5px';
 
         var searchProdDiv = parentDiv.getElementsByClassName('product-search-bar-wrap')[0];
         parentDiv.insertBefore(newLink, searchProdDiv);        
