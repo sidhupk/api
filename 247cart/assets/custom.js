@@ -34,7 +34,7 @@ function setPage() {
 
      if(document.getElementById('coverPic') === null && imageArray && imageArray.length>0) {
         
-        var coverImg = document.createElement("img");        
+        var coverImg = document.createElement("div");        
         var randomItem = imageArray[Math.floor(Math.random() * imageArray.length)];
         coverImg.setAttribute('id','coverPic');
         var parentDiv = document.getElementsByClassName('main-container')[0];        
