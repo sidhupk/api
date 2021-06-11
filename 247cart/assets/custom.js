@@ -4,6 +4,14 @@ function setPage() {
    if(document.getElementsByClassName('trusted-seller-wrap').length > 0) {
    document.getElementsByClassName('trusted-seller-wrap')[0].remove();
    }
+   
+   /* Title */
+        var linkParent = document.getElementsByClassName('store-name-text')[0].getElementsByTagName('a')[0];
+        var divParent = linkParent.getElementsByTagName('div')[0];
+        divParent.style.float = 'left';   
+        divParent.style.fontFamily = 'sans-serif';
+        divParent.style.fontStyle = 'italic';
+   /*
    if(document.getElementById('titleBeePic') === null) {
         var linkParent = document.getElementsByClassName('store-name-text')[0].getElementsByTagName('a')[0];
         var divParent = linkParent.getElementsByTagName('div')[0];
@@ -20,7 +28,7 @@ function setPage() {
         img.style.position = 'absolute';
         img.setAttribute('id','titleBeePic');
         linkParent.insertBefore(img, divParent);        
-     }
+     } */
 
      var imageArray = getImageList();
 
