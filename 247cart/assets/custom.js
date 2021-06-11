@@ -34,21 +34,22 @@ function setPage() {
 
      if(document.getElementById('coverPic') === null && imageArray && imageArray.length>0) {
         
-        var coverImg = document.createElement("div");        
+       // var coverImg = document.createElement("div");        
         var randomItem = imageArray[Math.floor(Math.random() * imageArray.length)];
-        coverImg.setAttribute('id','coverPic');
+        //coverImg.setAttribute('id','coverPic');
         var parentDiv = document.getElementsByClassName('main-container')[0];        
         var newLink = document.createElement("a");    
         
         newLink.setAttribute('id','coverPic');
         newLink.setAttribute('class','cover-pic-link');
         newLink.setAttribute('href',randomItem.link);
+        newLink.style.marginTop = '3px';
 
         var searchProdDiv = parentDiv.getElementsByClassName('product-search-bar-wrap')[0];
         parentDiv.insertBefore(newLink, searchProdDiv);        
 
         var linkParent = parentDiv.getElementsByClassName('cover-pic-link')[0];
-        linkParent.innerHTML = "<img src='"+randomItem.url+"' style='margin-top:5px' />";
+        linkParent.innerHTML = "<img src='"+randomItem.url+"' />";
      }
    }
    setPage();
