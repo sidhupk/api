@@ -48,7 +48,7 @@ function setPage() {
         parentDiv.insertBefore(newLink, searchProdDiv);        
 
         var linkParent = parentDiv.getElementsByClassName('cover-pic-link')[0];
-        linkParent.innerHTML = "<img src='"+randomItem.url+"' />";
+        linkParent.innerHTML = "<img src='"+randomItem.url+"' style='margin-top:3px' />";
      }
    }
    setPage();
