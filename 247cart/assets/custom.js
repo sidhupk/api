@@ -10,7 +10,7 @@ function setPage() {
         var divParent = linkParent.getElementsByTagName('div')[0];
         divParent.style.float = 'left';   
         divParent.style.fontFamily = 'sans-serif';
-        divParent.style.fontStyle = 'italic';
+       // divParent.style.fontStyle = 'italic';
    /*
    if(document.getElementById('titleBeePic') === null) {
         var linkParent = document.getElementsByClassName('store-name-text')[0].getElementsByTagName('a')[0];
