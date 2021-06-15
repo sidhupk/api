@@ -7,10 +7,12 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     }
   
    function setPage() {
+     if(document.getElementsByClassName('view-filter-updated').length > 0) { return; }
      isAvailable = false;
      let myElements = document.querySelectorAll(".seperator-box");
      for (let i = 0; i < myElements.length; i++) {
           myElements[i].style.display = 'none';
+          myElements[i].classList.add("view-filter-updated");
      }
      var box = document.getElementsByClassName('dose-block');
           for(i=0;i<box.length;i++) {
