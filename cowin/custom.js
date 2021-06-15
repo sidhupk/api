@@ -5,16 +5,33 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
       
       }
     }
-
    function setPage() {
+     let myElements = document.querySelectorAll(".seperator-box");
+     for (let i = 0; i < myElements.length; i++) {
+          myElements[i].style.display = 'none';
+     }
+     var box = document.getElementsByClassName('dose-block');
+          for(i=0;i<box.length;i++) {
+            if(box[i].getElementsByClassName('booked-slot').length < 2) {
+              var block = box[i].getElementsByClassName('booked-slot')[0].closest(".seperator-box");
+                block.style.display = 'block';
+             }
+          }
+   } 
+   function triggerApi() {
    
     document.getElementsByClassName('pin-search-btn')[0].click();
+      setTimeout(function(){
+       setPage();
+      },8000);
 
    }
-   setPage();
+   
+   triggerApi();
+   
 
    setInterval(function() {
-    setPage();
+    triggerApi();
    },60000);
 
    setInterval(function() {
