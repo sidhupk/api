@@ -5,7 +5,29 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
       snd.play();      
       }
     }
-  
+   function hideElements() {
+     if(document.getElementsByTagName('app-header').length > 0) {
+      document.getElementsByTagName('app-header')[0].remove();
+     }
+     if(document.getElementsByTagName('app-footer').length > 0) {
+      document.getElementsByTagName('app-footer')[0].remove();
+     }
+    if(document.getElementsByClassName('cm-helpline').length > 0) {
+       document.getElementsByClassName('cm-helpline')[0].remove();
+    }
+    if(document.getElementsByClassName('page-banner').length > 0) {
+       document.getElementsByClassName('page-banner')[0].remove();
+    }
+    if(document.getElementsByClassName('howitworkblock').length > 0) {
+       document.getElementsByClassName('howitworkblock')[0].remove();
+    }
+    if(document.getElementsByClassName('vaccination-detail').length > 0) {
+       document.getElementsByClassName('vaccination-detail')[0].remove();
+    }
+    if(document.getElementsByClassName('covidcertificat').length > 0) {
+       document.getElementsByClassName('covidcertificat')[0].remove();
+    }   
+   }
    function setPage() {
      if(document.getElementsByClassName('view-filter-updated').length > 0) { return; }
      isAvailable = false;
@@ -28,16 +50,13 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
           }
    } 
    function triggerApi() {
-   
     document.getElementsByClassName('pin-search-btn')[0].click();
-     
-       
-
    }
-   
+   hideElements();
    triggerApi();
    
    setInterval(function() {
+    hideElements();
     setPage();
    },5000);
 
