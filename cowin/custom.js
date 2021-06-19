@@ -83,7 +83,10 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     document.getElementsByClassName('pin-search-btn')[0].click();
    }
     hideElements();
-    setInterval(function() {
+    setTimeout(function() {
+      hideElements();
+    }, 500);
+    setTimeout(function() {
       hideElements();
     }, 1000);
 
