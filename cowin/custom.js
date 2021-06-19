@@ -28,11 +28,9 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     if(document.getElementsByClassName('covidcertificat').length > 0) {
        document.getElementsByClassName('covidcertificat')[0].remove();
     }
-/*
     if(document.getElementsByClassName('mat-tab-labels').length > 0) {
        document.getElementsByClassName('mat-tab-labels')[0].children[2].style.display='none';
     }
-*/
    }
    function setPage() {
      if(document.getElementsByClassName('view-filter-updated').length > 0) { return; }
@@ -83,15 +81,20 @@ var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
    function triggerApi() {
     document.getElementsByClassName('pin-search-btn')[0].click();
    }
-   hideElements();
-   triggerApi();
+    setTimeout(function() {
+     hideElements();
+    }, 500);
+
+    // hideElements();
+    // triggerApi();
    
    setInterval(function() {
     setPage();
+    hideElements();
    },5000);
 
    setInterval(function() {
-    hideElements();
+    // hideElements();
    },500);
 
    setInterval(function() {
