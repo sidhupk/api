@@ -92,7 +92,7 @@ var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
 
    setInterval(function() {
     hideElements();
-   },1000);
+   },500);
 
    setInterval(function() {
     triggerApi();
