@@ -57,6 +57,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     
    }
 
+var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
 
  function timer()
     {
@@ -86,9 +87,12 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
    triggerApi();
    
    setInterval(function() {
-    hideElements();
     setPage();
    },5000);
+
+   setInterval(function() {
+    hideElements();
+   },1000);
 
    setInterval(function() {
     triggerApi();
@@ -98,6 +102,4 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     beep();
    },5000);
 
-//var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
 
-   
