@@ -55,15 +55,14 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     
    }
 
-var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+var counter=setInterval(timer, 1000);
 
  function timer()
     {
       count=count-1;
       if (count <= 0)
       {
-         // clearInterval(counter);
-         //counter ended, do something here
+        
          count=60;
          return;
       }
@@ -85,7 +84,7 @@ var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
      hideElements();
     }, 2000);
 
-    // hideElements();
+    hideElements();
     triggerApi();
    
    setInterval(function() {
@@ -93,9 +92,6 @@ var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
     setPage();
    },5000);
 
-   setInterval(function() {
-    // hideElements();
-   },500);
 
    setInterval(function() {
     triggerApi();
@@ -104,5 +100,3 @@ var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
    setInterval(function() {
     beep();
    },5000);
-
-
