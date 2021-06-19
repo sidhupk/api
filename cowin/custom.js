@@ -7,6 +7,9 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
       }
     }
    function hideElements() {
+     if(document.getElementsByClassName('yellowbtn').length > 0) {
+       document.getElementsByClassName('yellowbtn')[0].remove();
+    }
      if(document.getElementsByTagName('app-header').length > 0) {
       document.getElementsByTagName('app-header')[0].remove();
      }
@@ -55,7 +58,6 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     
    }
 
-var counter=setInterval(timer, 1000);
 
  function timer()
     {
@@ -92,7 +94,6 @@ var counter=setInterval(timer, 1000);
     setPage();
    },5000);
 
-
    setInterval(function() {
     triggerApi();
    },60000);
@@ -100,3 +101,6 @@ var counter=setInterval(timer, 1000);
    setInterval(function() {
     beep();
    },5000);
+
+var counter=setInterval(timer, 1000);
+
