@@ -100,7 +100,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
 
    setInterval(function() {
     beep();
-    //hideElements();
+    hideElements();
    },5000);
 
 var counter=setInterval(timer, 1000);
