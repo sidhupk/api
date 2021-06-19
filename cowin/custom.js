@@ -85,6 +85,9 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     hideElements();
     setTimeout(function() {
       hideElements();
+    },200);
+    setTimeout(function() {
+      hideElements();
     }, 500);
     setTimeout(function() {
       hideElements();
