@@ -98,6 +98,6 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     beep();
    },5000);
 
-var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+//var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
 
    
