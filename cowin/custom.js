@@ -28,9 +28,11 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     if(document.getElementsByClassName('covidcertificat').length > 0) {
        document.getElementsByClassName('covidcertificat')[0].remove();
     }
+/*
     if(document.getElementsByClassName('mat-tab-labels').length > 0) {
        document.getElementsByClassName('mat-tab-labels')[0].children[2].style.display='none';
     }
+*/
    }
    function setPage() {
      if(document.getElementsByClassName('view-filter-updated').length > 0) { return; }
