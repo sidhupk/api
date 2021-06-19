@@ -83,14 +83,14 @@ var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
    }
     setTimeout(function() {
      hideElements();
-    }, 500);
+    }, 2000);
 
     // hideElements();
-    // triggerApi();
+    triggerApi();
    
    setInterval(function() {
-    setPage();
     hideElements();
+    setPage();
    },5000);
 
    setInterval(function() {
