@@ -58,9 +58,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
    }
 
 
-var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
-
-    function timer()
+ function timer()
     {
       count=count-1;
       if (count <= 0)
@@ -99,3 +97,7 @@ var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
    setInterval(function() {
     beep();
    },5000);
+
+var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+
+   
