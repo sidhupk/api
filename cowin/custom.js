@@ -98,6 +98,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
    // hideElements();
    
    setInterval(function() {
+    hideElements();
     setPage();
    },5000);
 
