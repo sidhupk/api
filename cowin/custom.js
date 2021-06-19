@@ -82,11 +82,12 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
    function triggerApi() {
     document.getElementsByClassName('pin-search-btn')[0].click();
    }
+    hideElements();
     setInterval(function() {
       hideElements();
     }, 1000);
 
-    hideElements();
+   // hideElements();
     triggerApi();
    // hideElements();
    
