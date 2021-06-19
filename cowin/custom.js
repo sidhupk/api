@@ -48,7 +48,33 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
 
              }
           }
-   } 
+    
+   }
+
+var count=60;
+var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+
+    function timer()
+    {
+      count=count-1;
+      if (count <= 0)
+      {
+         // clearInterval(counter);
+         //counter ended, do something here
+         count=60;
+         return;
+      }
+
+      /* set counter */
+     if(document.getElementById('counterTime') === null) {
+        var div = document.createElement("div");
+        div.innerHTML = "<div>Next refresh in <b><span id='counterTime'>60</span></b> Second.</div>";
+        div.style.textAlign = 'center';
+        document.getElementsByClassName('mainContainer')[0].insertBefore(div, document.getElementsByTagName('router-outlet')[0]);
+      }
+     document.getElementById('counterTime').innerHTML = count;
+    }
+
    function triggerApi() {
     document.getElementsByClassName('pin-search-btn')[0].click();
    }
