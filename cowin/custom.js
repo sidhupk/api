@@ -81,7 +81,6 @@ var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
 
    function triggerApi() {
     document.getElementsByClassName('pin-search-btn')[0].click();
-    count=60;
    }
    hideElements();
    triggerApi();
