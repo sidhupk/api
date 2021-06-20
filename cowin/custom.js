@@ -32,7 +32,9 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
        document.getElementsByClassName('covidcertificat')[0].remove();
     }
     if(document.getElementsByClassName('mat-tab-labels').length > 0) {
-        document.getElementsByClassName('mat-tab-labels')[0].children[2].style.display='none';
+        if(document.getElementsByClassName('mat-tab-labels')[0].children.length>2){
+         document.getElementsByClassName('mat-tab-labels')[0].children[2].style.display='none';
+        }
     }
    }
    function setPage() {
