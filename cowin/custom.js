@@ -117,4 +117,4 @@ var counter=setInterval(timer, 1000);
 setTimeout(function() {
       hideElements();
       document.getElementsByTagName("html")[0].style.visibility = "visible";
-}, 2000);
+}, 1000);
