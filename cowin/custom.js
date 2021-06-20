@@ -85,13 +85,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
    function triggerApi() {
     document.getElementsByClassName('pin-search-btn')[0].click();
    }
-    hideElements();
-    setTimeout(function() {
-      hideElements();
-    },200);
-    setTimeout(function() {
-      hideElements();
-    }, 500);
+    
     setTimeout(function() {
       hideElements();
     }, 1000);
@@ -115,6 +109,5 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
 
 var counter=setInterval(timer, 1000);
 setTimeout(function() {
-      hideElements();
       document.getElementsByTagName("html")[0].style.visibility = "visible";
 }, 2500);
