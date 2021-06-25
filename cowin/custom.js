@@ -97,7 +97,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
         a.style.fontWeight = 600;
         a.setAttribute('id','shareApp');
         a.style.display = 'none';
-        a.setAttribute('href','https://play.google.com/store/apps/details?id=com.cowinindiaslotalert.sidhupk');
+        a.setAttribute('href','https://web.whatsapp.com/send?text=Download Cowin India Slot Alert App Here - https://play.google.com/store/apps/details?id=com.cowinindiaslotalert.sidhupk');
         document.getElementsByClassName('mainContainer')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
       }
    }
