@@ -86,6 +86,20 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
    function triggerApi() {
     document.getElementsByClassName('pin-search-btn')[0].click();
    }
+   function shareButton() {
+      if(document.getElementById('shareApp') === null) {
+        var a = document.createElement("a");
+        a.innerText = "Share App";
+        a.style.position = 'absolute';
+        a.style.right = '10px';
+        a.style.bottom = 0;
+        a.style.color = '#002060!important';
+        a.style.fontWeight = 600;
+        a.setAttribute('id','shareApp');
+        a.setAttribute('href','https://play.google.com/store/apps/details?id=com.cowinindiaslotalert.sidhupk');
+        document.getElementsByClassName('mainContainer')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
+      }
+   }
     
     setTimeout(function() {
       hideElements();
