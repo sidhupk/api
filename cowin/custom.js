@@ -93,7 +93,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
         a.style.position = 'absolute';
         a.style.right = '10px';
         a.style.top = 0;
-        a.style.width = '70px';
+        // a.style.width = '70px';
         a.setAttribute('id','shareApp');
         a.setAttribute('target','_blank');
         a.setAttribute('href','https://api.whatsapp.com/send?text=Download Cowin India Slot Alert App Here - https://play.google.com/store/apps/details?id=com.cowinindiaslotalert.sidhupk');
