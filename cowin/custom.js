@@ -60,11 +60,12 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
 
              }
           }
+    /*
     if(isAvailable && document.getElementById('gotoCowin')) {
      document.getElementById('gotoCowin').style.display = 'block';
     } else if(document.getElementById('gotoCowin')) {
      document.getElementById('gotoCowin').style.display = 'none';
-    }
+    } */
     
    }
 
