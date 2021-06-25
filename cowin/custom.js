@@ -60,6 +60,11 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
 
              }
           }
+    if(isAvailable && document.getElementById('gotoCowin')) {
+     document.getElementById('gotoCowin').style.display = 'block';
+    } else if(document.getElementById('gotoCowin')) {
+     document.getElementById('gotoCowin').style.display = 'none';
+    }
     
    }
 
@@ -101,6 +106,21 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
         document.getElementsByClassName('mainContainer')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
       }
    }
+
+   function gotoCowin() {
+      if(document.getElementById('gotoCowin') === null) {
+        var a = document.createElement("a");
+        a.innerHTML = 'Go to Cowin';
+        a.style.position = 'absolute';
+        a.style.left = '0px';
+        a.style.top = 0;
+        a.style.display = 'none';
+        a.setAttribute('id','gotoCowin');
+        a.setAttribute('target','_blank');
+        a.setAttribute('href','https://www.cowin.gov.in/');
+        document.getElementsByClassName('mainContainer')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
+      }
+   }
     
     setTimeout(function() {
       hideElements();
@@ -124,6 +144,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     counter=setInterval(timer, 1000);    
    }
 shareButton();
+gotoCowin();
 setTimeout(function() {
       document.getElementsByTagName("html")[0].style.visibility = "visible";
 }, 2500);
