@@ -117,7 +117,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
         a.style.display = 'none';
         a.setAttribute('id','gotoCowin');
         a.setAttribute('target','_blank');
-        a.setAttribute('href','https://www.cowin.gov.in/');
+        a.setAttribute('href','https://selfregistration.cowin.gov.in/');
         document.getElementsByClassName('mainContainer')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
       }
    }
