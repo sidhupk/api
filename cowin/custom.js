@@ -92,7 +92,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
         a.innerText = "Share App";
         a.style.position = 'absolute';
         a.style.right = '10px';
-        a.style.bottom = 0;
+        a.style.top = 0;
         a.style.color = '#002060!important';
         a.style.fontWeight = 600;
         a.setAttribute('id','shareApp');
