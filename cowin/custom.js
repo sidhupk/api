@@ -119,6 +119,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
    },5000);
 
 var counter=setInterval(timer, 1000);
+shareButton();
 setTimeout(function() {
       document.getElementsByTagName("html")[0].style.visibility = "visible";
 }, 2500);
