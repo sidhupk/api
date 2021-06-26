@@ -1,3 +1,5 @@
+if(document.getElementsByTagName("html")[0].getAttribute('init') === null ) { 
+document.getElementsByTagName("html")[0].setAttribute('init','true');
 document.getElementsByTagName("html")[0].style.visibility = "hidden";
 var enableIntervalBinding = true;
 hideElements();
@@ -149,3 +151,4 @@ gotoCowin();
 setTimeout(function() {
       document.getElementsByTagName("html")[0].style.visibility = "visible";
 }, 2500);
+}
