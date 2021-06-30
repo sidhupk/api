@@ -186,10 +186,11 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
      },5000);
     counter=setInterval(timer, 1000);    
    }
-shareButton();
-gotoCowin();
-alarmButton();
+
 setTimeout(function() {
       document.getElementsByTagName("html")[0].style.visibility = "visible";
+      shareButton();
+      gotoCowin();
+      alarmButton();
 }, 2500);
 }
