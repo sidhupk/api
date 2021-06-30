@@ -89,7 +89,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
       /* set counter */
      if(document.getElementById('counterTime') === null) {
         var div = document.createElement("div");
-        div.innerHTML = "<div>Next refresh in <b><span id='counterTime'>60</span></b> Second.</div>";
+        div.innerHTML = "<div>Next refresh in <b><span id='counterTime'>60</span></b> Sec.</div>";
         div.style.textAlign = 'center';
         document.getElementsByClassName('mainContainer')[0].insertBefore(div, document.getElementsByTagName('router-outlet')[0]);
       }
@@ -150,7 +150,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
         a.style.top = 0;
        // a.style.display = 'none';
         a.setAttribute('id','alarmIcon');
-        a.setAttribute('target','_blank');
+        // a.setAttribute('target','_blank');
         a.setAttribute('onclick','toggleAlarm();return false;');
 		// a.setAttribute('href','#');
         document.getElementsByClassName('mainContainer')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
