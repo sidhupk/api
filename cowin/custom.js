@@ -154,7 +154,8 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
         a.setAttribute('onclick','toggleAlarm();return false;');
 		// a.setAttribute('href','#');
         document.getElementsByClassName('mainContainer')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
-      }
+        a.addEventListener("click", toggleAlarm(), false);
+	  }
    }
 
 	
