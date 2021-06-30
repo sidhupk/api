@@ -145,6 +145,8 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
         a.innerHTML = "<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAOCAYAAADaOrdAAAACgUlEQVQ4T51UMUhqYRT+ri1GDhJSS4sOkoVYDRWNiYFQEFgY4aCDBdIQDg1FiiBhNJUgGOkUkWgUKBIFbYIgImplU0QNUghGd2hI9PEfnhfL63uPd5ef//Cf+53zfd85HM/zDQBoNOigj+M4Olksn8/j9vYWFotFiDXfHR8fQ6fTQavViuYK/+sEUq/X4Xa7EY/HsbW1hcXFRfA8j6OjI9jtdvT09CAWi2FnZwdGoxFer5eKay1QAPn4+BBaaH3AknO5HHZ3d+FyuTA+Po7BwUEsLCzg7OwMd3d3yGaz8Hg82NjYwMjICLa3t0UZ4cRAnp+fYTAYcHNzg7m5OaysrGB0dJQ6S6VSmJqaosoZSDAYRCKRgF6vx/X1NQYGBtqoEwXx+/14e3tDX18fHh8fYbVaYTabsbe3h4mJCaTTaao+Go0iHA5DpVLh9fUV/f39WFtbawcR08TpdBI9l5eXWFpaInqmp6exvLws0HFyckKdmkwmApuZmSHw/f39NoNwYiBMaKVSiWKxiMnJSYRCIRwcHGB4eFgAYZqsr6/DZrMhk8lgaGgIT09PZIQ2t4ppcnV1RdZllUskEurm8PAQarVasPjDwwNWV1cRiUTw9fWF09NTjI2NUcc/R0FUk9aZ+fz8pCrv7+/R3d0tgLC4RqNBqVSCVCoVt+7veROlq9XKPp8PLy8vCAQCbTQ4HA5y0+bm5v8NI8tilMzPz5PAvb29bSDVapWse3Fx8Y3Kf9KkSdf7+zuBlMtl1Go1sLtCoUClUoFcLkdXVxd1cn5+TvdO6+mvmjSpYyuFDSQbTLZa2CDKZLI/09TUpNNaEVuWhUIByWQSs7OztBQ7LdWfub8A3+h23Bwe25QAAAAASUVORK5CYII='/>";
         a.style.position = 'absolute';
         a.style.right = '90px';
+		a.style.minWidth = '30px';
+		a.style.textAlign = 'right';
         a.style.top = 0;
        // a.style.display = 'none';
         a.setAttribute('id','alarmIcon');
