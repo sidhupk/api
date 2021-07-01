@@ -1,6 +1,5 @@
 
 
-
 if(document.getElementsByTagName("html")[0].getAttribute('init') === null ) { 
 document.getElementsByTagName("html")[0].setAttribute('init','true');
 document.getElementsByTagName("html")[0].style.visibility = "hidden";
@@ -49,7 +48,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     }
    }
    function setPage() {
-     if(document.getElementsByClassName('view-filter-updated').length > 0) { return; }
+     if(document.getElementsByClassName('view-filter-updated').length === 0) { 
      isAvailable = false;
      let myElements = document.querySelectorAll(".seperator-box");
      for (let i = 0; i < myElements.length; i++) {
@@ -70,13 +69,13 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
           }
 		  
 	/* set filter */
-	   /*
 	for(var i = 0; i < filterArray.length; i++) {
 	    var elm = document.getElementById(filterArray[i]);
 			if(elm && !elm.checked) {
 				elm.click();
 			}
-	} */
+	}
+    filterArray = [];
     /*
     if(isAvailable && document.getElementById('gotoCowin')) {
      document.getElementById('gotoCowin').style.display = 'block';
@@ -85,13 +84,13 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     } */
     
    }
-
+   }
 
  function timer()
     {
       count=count-1;
       if (count <= 0)
-      {  // getFilter();
+      {  
          triggerApi();
          count=refreshInterval;
          return;
