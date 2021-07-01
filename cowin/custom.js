@@ -75,7 +75,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
 				elm.click();
 			}
 	}
-    filterArray = [];
+    // filterArray = [];
     /*
     if(isAvailable && document.getElementById('gotoCowin')) {
      document.getElementById('gotoCowin').style.display = 'block';
