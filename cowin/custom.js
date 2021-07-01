@@ -81,7 +81,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
       count=count-1;
       if (count <= 0)
       {
-        
+         triggerApi();
          count=100;
          return;
       }
@@ -178,7 +178,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
      },5000);
 
      setInterval(function() {
-      triggerApi();
+      // triggerApi();
      },60000);
 
      setInterval(function() {
