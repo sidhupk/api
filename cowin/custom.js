@@ -70,12 +70,13 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
           }
 		  
 	/* set filter */
+	   /*
 	for(var i = 0; i < filterArray.length; i++) {
 	    var elm = document.getElementById(filterArray[i]);
 			if(elm && !elm.checked) {
 				elm.click();
 			}
-	}
+	} */
     /*
     if(isAvailable && document.getElementById('gotoCowin')) {
      document.getElementById('gotoCowin').style.display = 'block';
