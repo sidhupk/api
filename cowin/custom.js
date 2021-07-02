@@ -1,5 +1,4 @@
 
-
 if(document.getElementsByTagName("html")[0].getAttribute('init') === null ) { 
 document.getElementsByTagName("html")[0].setAttribute('init','true');
 document.getElementsByTagName("html")[0].style.visibility = "hidden";
@@ -11,6 +10,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
  var refreshInterval = count;
  var filterArray = [];
  var isAlamOn = true;
+ var isFilterChanged = true;
      function beep() { // document.getElementsByClassName('dosetotal').length > 0 || document.getElementsByClassName('available-slot').length > 0 || 
       if(isAvailable && isAlamOn) {
       snd.play();      
@@ -69,13 +69,16 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
           }
 		  
 	/* set filter */
+   if(isFilterChanged) {
 	for(var i = 0; i < filterArray.length; i++) {
 	    var elm = document.getElementById(filterArray[i]);
 			if(elm && !elm.checked) {
 				elm.click();
 			}
 	}
-     filterArray = [];
+     // filterArray = [];
+     isFilterChanged = false;
+   }
     /*
     if(isAvailable && document.getElementById('gotoCowin')) {
      document.getElementById('gotoCowin').style.display = 'block';
@@ -185,6 +188,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
 				filterArray.push(inputs[i].getAttribute('id'));
 			}
 		}
+      isFilterChanged = true;
 	}
     
     setTimeout(function() {
