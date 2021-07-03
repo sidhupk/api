@@ -12,7 +12,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
  var isAlamOn = true;
  var isFilterChanged = true;
      function beep() { // document.getElementsByClassName('dosetotal').length > 0 || document.getElementsByClassName('available-slot').length > 0 || 
-      if(isAvailable && isAlamOn) {
+      if(isAvailable && isAlamOn && !isFilterChanged ) {
       snd.play();      
       }
     }
@@ -68,17 +68,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
              }
           }
 		  
-	/* set filter */
-   if(isFilterChanged) {
-	for(var i = 0; i < filterArray.length; i++) {
-	    var elm = document.getElementById(filterArray[i]);
-			if(elm && !elm.checked) {
-				elm.click();
-			}
-	}
-     // filterArray = [];
-     isFilterChanged = false;
-   }
+	
     /*
     if(isAvailable && document.getElementById('gotoCowin')) {
      document.getElementById('gotoCowin').style.display = 'block';
@@ -87,6 +77,19 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     } */
     
    }
+   
+	   /* set filter */
+	   if(isFilterChanged) {
+		for(var i = 0; i < filterArray.length; i++) {
+			var elm = document.getElementById(filterArray[i]);
+				if(elm && typeof elm != 'undefined' && !elm.checked) {
+					elm.click();
+				}
+		}
+		 // filterArray = [];
+		 // isFilterChanged = false;
+	   }
+   
    }
 
  function timer()
@@ -100,6 +103,9 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
       }
 	  if (count === 5) {
 		getFilter();
+	  }
+	  if(count === refreshInterval - 5) {
+		isFilterChanged = false
 	  }
 
       /* set counter */
