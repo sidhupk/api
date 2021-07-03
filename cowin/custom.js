@@ -142,7 +142,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
         var a = document.createElement("a");
         a.innerHTML = 'Go to Cowin';
         a.style.position = 'absolute';
-        a.style.left = '146px';
+        a.style.right = '146px';
         a.style.top = 0;
        // a.style.display = 'none';
         a.setAttribute('id','gotoCowin');
