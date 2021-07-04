@@ -17,29 +17,31 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
       }
     }
    function hideElements() {
-     if(document.getElementsByClassName('yellowbtn').length > 0) {
-       document.getElementsByClassName('yellowbtn')[0].remove();
-    }
+   
      if(document.getElementsByTagName('app-header').length > 0) {
       document.getElementsByTagName('app-header')[0].remove();
      }
      if(document.getElementsByTagName('app-footer').length > 0) {
       document.getElementsByTagName('app-footer')[0].remove();
      }
-    if(document.getElementsByClassName('cm-helpline').length > 0) {
-       document.getElementsByClassName('cm-helpline')[0].remove();
+    if(document.getElementsByClassName('helplineSection').length > 0) {
+       document.getElementsByClassName('helplineSection')[0].remove();
     }
-    if(document.getElementsByClassName('page-banner').length > 0) {
-       document.getElementsByClassName('page-banner')[0].remove();
+    if(document.getElementsByClassName('banner-block').length > 0) {
+       document.getElementsByClassName('banner-block')[0].remove();
     }
-    if(document.getElementsByClassName('howitworkblock').length > 0) {
-       document.getElementsByClassName('howitworkblock')[0].remove();
+    if(document.getElementsByClassName('getVaccinationSection').length > 0) {
+       document.getElementsByClassName('getVaccinationSection')[0].remove();
     }
-    if(document.getElementsByClassName('vaccination-detail').length > 0) {
-       document.getElementsByClassName('vaccination-detail')[0].remove();
+    if(document.getElementsByClassName('helpYouSection').length > 0) {
+       document.getElementsByClassName('helpYouSection')[0].remove();
+    } 
+	if(document.getElementsByClassName('vaccinaitonDriveSection').length > 0) {
+       document.getElementsByClassName('vaccinaitonDriveSection')[0].remove();
     }
-    if(document.getElementsByClassName('covidcertificat').length > 0) {
-       document.getElementsByClassName('covidcertificat')[0].remove();
+	
+    if(document.getElementsByClassName('faqSection').length > 0) {
+       document.getElementsByClassName('faqSection')[0].remove();
     }
     if(document.getElementsByClassName('mat-tab-labels').length > 0) {
         if(document.getElementsByClassName('mat-tab-labels')[0].children.length>2){
