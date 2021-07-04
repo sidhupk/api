@@ -153,7 +153,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
    function gotoCowin() {
       if(document.getElementById('gotoCowin') === null) {
         var a = document.createElement("a");
-        a.innerHTML = 'Go to Cowin';
+        a.innerHTML = 'Cowin';
         a.style.position = 'absolute';
         a.style.right = '146px';
         a.style.top = 0;
