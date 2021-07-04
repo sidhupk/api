@@ -1,7 +1,6 @@
-document.getElementsByTagName("html")[0].style.visibility = "hidden";
-if(document.getElementsByClassName('banner-block').length > 0 ) { document.getElementsByClassName('banner-block')[0].style.visibility = "hidden"; }
-setTimeout(()=> { if(document.getElementsByClassName('emblem-logo2').length > 0) { document.getElementsByClassName('emblem-logo2')[0].click(); } }, 1000);
-setTimeout(()=> {
+
+function onLoad() {
+setTimeout(() => {
 if(document.getElementsByTagName("html")[0].getAttribute('init') === null ) { 
 document.getElementsByTagName("html")[0].setAttribute('init','true');
 document.getElementsByTagName("html")[0].style.visibility = "hidden";
@@ -233,5 +232,18 @@ setTimeout(function() {
 } else {
    document.getElementsByTagName("html")[0].style.visibility = "visible";
 }
-
 }, 2000);
+
+}
+
+if(window.location.href.indexOf('notfound') === -1 ){
+
+onLoad();
+
+} else {
+    document.getElementsByTagName("html")[0].style.visibility = "hidden";
+	window.location = '/';   
+    setTimeout(()=> { 
+		onLoad();
+		}, 2500);
+}
