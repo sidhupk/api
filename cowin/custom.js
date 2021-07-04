@@ -188,7 +188,7 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
    }
 
 	function getFilter() {	
-	   var topFilter = document.getElementsByClassName('topfilter')[0];
+	   var topFilter = document.getElementsByClassName('filter-result')[0];
 		var inputs = topFilter.getElementsByTagName('input');
 		filterArray = [];
 		for(var i = 0; i < inputs.length; i++) {
