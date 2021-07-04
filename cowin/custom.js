@@ -252,6 +252,9 @@ if(document.getElementsByClassName('noteTextMobile').length > 0) {
        document.getElementsByClassName('noteTextMobile')[0].remove();
 }
 onLoad();
+setTimeout(function() { 
+	document.getElementsByTagName("html")[0].style.visibility = "visible";
+},500);
 } else {
     document.getElementsByTagName("html")[0].style.visibility = "hidden";	
 	var link = document.createElement('a');
