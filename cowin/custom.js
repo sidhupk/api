@@ -47,11 +47,18 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
 	if(document.getElementsByClassName('noteTextMobile').length > 0) {
        document.getElementsByClassName('noteTextMobile')[0].remove();
     }
+	if(document.querySelectorAll('h1.accessibility-plugin-ac').length > 0) { 
+		document.querySelectorAll('h1.accessibility-plugin-ac')[0].remove();
+	}
     if(document.getElementsByClassName('mat-tab-labels').length > 0) {
         if(document.getElementsByClassName('mat-tab-labels')[0].children.length>2){
          document.getElementsByClassName('mat-tab-labels')[0].children[2].style.display='none';
         }
     }
+	if(document.getElementsByClassName('nearestCentersSection').length > 0) {
+        document.getElementsByClassName('nearestCentersSection')[0].style.padding = '0px';
+    }
+	
    }
    function setPage() {
      if(document.getElementsByClassName('view-filter-updated').length === 0) { 
@@ -241,6 +248,9 @@ setTimeout(function() {
 
 setInterval(()=> {
 if(window.location.href.indexOf('notfound') === -1 ){
+if(document.getElementsByClassName('noteTextMobile').length > 0) {
+       document.getElementsByClassName('noteTextMobile')[0].remove();
+}
 onLoad();
 } else {
     document.getElementsByTagName("html")[0].style.visibility = "hidden";	
