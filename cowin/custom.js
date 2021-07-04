@@ -1,4 +1,6 @@
+document.getElementsByTagName("html")[0].style.visibility = "hidden";
 document.getElementsByClassName('emblem-logo2')[0].click();
+setTimeout(()=> {
 if(document.getElementsByTagName("html")[0].getAttribute('init') === null ) { 
 document.getElementsByTagName("html")[0].setAttribute('init','true');
 document.getElementsByTagName("html")[0].style.visibility = "hidden";
@@ -228,3 +230,5 @@ setTimeout(function() {
       alarmButton();
 }, 2500);
 }
+
+}, 2000);
