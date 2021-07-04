@@ -1,6 +1,6 @@
 
 function onLoad() {
-setTimeout(() => {
+
 if(document.getElementsByTagName("html")[0].getAttribute('init') === null ) { 
 document.getElementsByTagName("html")[0].setAttribute('init','true');
 document.getElementsByTagName("html")[0].style.visibility = "hidden";
@@ -232,10 +232,7 @@ setTimeout(function() {
       gotoCowin();
       alarmButton();
 }, 2500);
-} else {
-   document.getElementsByTagName("html")[0].style.visibility = "visible";
 }
-}, 2000);
 
 }
 
