@@ -1,5 +1,6 @@
 document.getElementsByTagName("html")[0].style.visibility = "hidden";
-setTimeout(()=> { document.getElementsByClassName('emblem-logo2')[0].click();}, 1000);
+if(document.getElementsByClassName('banner-block').length > 0 ) { document.getElementsByClassName('banner-block')[0].style.visibility = "hidden"; }
+setTimeout(()=> { if(document.getElementsByClassName('emblem-logo2').length > 0) { document.getElementsByClassName('emblem-logo2')[0].click(); } }, 1000);
 setTimeout(()=> {
 if(document.getElementsByTagName("html")[0].getAttribute('init') === null ) { 
 document.getElementsByTagName("html")[0].setAttribute('init','true');
@@ -229,6 +230,8 @@ setTimeout(function() {
       gotoCowin();
       alarmButton();
 }, 2500);
+} else {
+   document.getElementsByTagName("html")[0].style.visibility = "visible";
 }
 
 }, 2000);
