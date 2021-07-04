@@ -260,7 +260,7 @@ if(document.readyState === "complete" && window.location.href.indexOf('notfound'
 	if(document.getElementsByClassName('noteTextMobile').length > 0) {
 			   document.getElementsByClassName('noteTextMobile')[0].remove();
 		}
-	if(document.getElementsByTagName("html")[0].getAttribute('init') === null) {
+	if(document.getElementById('Search-Vaccination-Center') !== null && document.getElementsByTagName("html")[0].getAttribute('init') === null) {
 		
 		onLoad();
 	}
