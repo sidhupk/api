@@ -256,12 +256,12 @@ setTimeout(function() {
 
 
 setInterval(()=> {
-if(window.location.href.indexOf('notfound') === -1 ){
+if(document.readyState === "complete" && window.location.href.indexOf('notfound') === -1 ){
 if(document.getElementsByClassName('noteTextMobile').length > 0) {
        document.getElementsByClassName('noteTextMobile')[0].remove();
 }
 onLoad();
-} else {
+} else if(document.readyState === "complete"){
 		window.location.href = 'https://www.cowin.gov.in/';
 }
 }, 100);
