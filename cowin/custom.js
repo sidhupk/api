@@ -45,6 +45,9 @@ var snd = new Audio("data:audio/wav;base64,UklGRjz3AQBXQVZFZm10IBAAAAABAAEAEnoAA
     if(document.getElementsByClassName('faqSection').length > 0) {
        document.getElementsByClassName('faqSection')[0].remove();
     }
+	if(document.getElementsByClassName('noteTextMobile').length > 0) {
+       document.getElementsByClassName('noteTextMobile')[0].remove();
+    }
     if(document.getElementsByClassName('mat-tab-labels').length > 0) {
         if(document.getElementsByClassName('mat-tab-labels')[0].children.length>2){
          document.getElementsByClassName('mat-tab-labels')[0].children[2].style.display='none';
@@ -236,14 +239,16 @@ setTimeout(function() {
 
 }
 
+
+
+setInterval(()=> {
 if(window.location.href.indexOf('notfound') === -1 ){
-
 onLoad();
-
 } else {
-    document.getElementsByTagName("html")[0].style.visibility = "hidden";
-	window.location = '/';   
-    setTimeout(()=> { 
-		onLoad();
-		}, 2500);
+    document.getElementsByTagName("html")[0].style.visibility = "hidden";	
+	var link = document.createElement('a');
+	link.href = '/';
+	document.body.appendChild(link);
+	link.click();  
 }
+}, 100);
