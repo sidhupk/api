@@ -205,7 +205,7 @@ var counter;
 function onLoad() {
 if(document.getElementsByTagName("html")[0].getAttribute('init') === null ) { 
 document.getElementsByTagName("html")[0].setAttribute('init','true');
-document.getElementsByTagName("html")[0].style.visibility = "hidden";
+// document.getElementsByTagName("html")[0].style.visibility = "hidden";
 
 hideElements();
 
