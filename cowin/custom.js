@@ -257,10 +257,13 @@ setTimeout(function() {
 
 setInterval(()=> {
 if(document.readyState === "complete" && window.location.href.indexOf('notfound') === -1 ){
-if(document.getElementsByClassName('noteTextMobile').length > 0) {
-       document.getElementsByClassName('noteTextMobile')[0].remove();
-}
-onLoad();
+	if(document.getElementsByClassName('noteTextMobile').length > 0) {
+			   document.getElementsByClassName('noteTextMobile')[0].remove();
+		}
+	if(document.getElementsByTagName("html")[0].getAttribute('init') === null) {
+		
+		onLoad();
+	}
 } else if(document.readyState === "complete"){
 		window.location.href = 'https://www.cowin.gov.in/';
 }
