@@ -1,5 +1,5 @@
 document.getElementsByTagName("html")[0].style.visibility = "hidden";
-document.getElementsByClassName('emblem-logo2')[0].click();
+setTimeout(()=> { document.getElementsByClassName('emblem-logo2')[0].click();}, 1000);
 setTimeout(()=> {
 if(document.getElementsByTagName("html")[0].getAttribute('init') === null ) { 
 document.getElementsByTagName("html")[0].setAttribute('init','true');
