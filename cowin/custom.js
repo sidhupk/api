@@ -208,24 +208,19 @@ var counter;
 	
    }
 
- 
-function onLoad() {
-if(document.getElementsByTagName("html")[0].getAttribute('init') === null ) { 
-document.getElementsByTagName("html")[0].setAttribute('init','true');
-// document.getElementsByTagName("html")[0].style.visibility = "hidden";
-
-hideElements();
-
-     function beep() { // document.getElementsByClassName('dosetotal').length > 0 || document.getElementsByClassName('available-slot').length > 0 || 
+function beep() { // document.getElementsByClassName('dosetotal').length > 0 || document.getElementsByClassName('available-slot').length > 0 || 
       if(isAvailable && isAlamOn && !isFilterChanged ) {
       snd.play();      
       }
     }
-  
-  
+	
+function onLoad() {
+if(document.getElementsByTagName("html")[0].getAttribute('init') === null ) { 
+document.getElementsByTagName("html")[0].setAttribute('init','true');
+document.getElementsByTagName("html")[0].style.visibility = "hidden";
 
+hideElements();
 
-    
     setTimeout(function() {
       hideElements();
     }, 1000);
@@ -248,11 +243,11 @@ hideElements();
     counter=setInterval(timer, 1000);    
    }
 
-setTimeout(function() {
-      document.getElementsByTagName("html")[0].style.visibility = "visible";
+setTimeout(function() {      
       shareButton();
       gotoCowin();
       alarmButton();
+	  document.getElementsByTagName("html")[0].style.visibility = "visible";
 }, 2500);
 } else {
    document.getElementsByTagName("html")[0].style.visibility = "visible";
@@ -264,9 +259,9 @@ setTimeout(function() {
 
 setInterval(()=> {
 if(document.readyState === "complete" && window.location.href.indexOf('notfound') === -1 ){
-	if(document.getElementsByClassName('noteTextMobile').length > 0) {
-			   document.getElementsByClassName('noteTextMobile')[0].remove();
-		}
+	/* if(document.getElementsByClassName('noteTextMobile').length > 0) {
+			  // document.getElementsByClassName('noteTextMobile')[0].remove();
+		} */
 	if(document.getElementById('Search-Vaccination-Center') !== null && document.getElementsByTagName("html")[0].getAttribute('init') === null) {
 		
 		onLoad();
