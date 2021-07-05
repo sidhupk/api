@@ -187,9 +187,16 @@ var counter;
 	if(document.getElementsByClassName('noteTextMobile').length > 0) {
        document.getElementsByClassName('noteTextMobile')[0].remove();
     }
+    if(document.getElementsByClassName('flashNewsSection').length > 0) {
+       document.getElementsByClassName('flashNewsSection')[0].remove();
+    }
 	if(document.querySelectorAll('h1.accessibility-plugin-ac').length > 0) { 
 		document.querySelectorAll('h1.accessibility-plugin-ac')[0].remove();
 	}
+
+	
+
+  
     if(document.getElementsByClassName('mat-tab-labels').length > 0) {
         if(document.getElementsByClassName('mat-tab-labels')[0].children.length>2){
          document.getElementsByClassName('mat-tab-labels')[0].children[2].style.display='none';
