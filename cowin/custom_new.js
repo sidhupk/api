@@ -245,23 +245,20 @@ hideElements();
      },5000);
     counter=setInterval(timer, 1000);    
    }
-
-setTimeout(function() {      
-      shareButton();
+	  shareButton();
       gotoCowin();
       alarmButton();
+setTimeout(function() {     
+      
 	  document.getElementsByTagName("html")[0].style.visibility = "visible";
 }, 2500);
-} else {
-   // document.getElementsByTagName("html")[0].style.visibility = "visible";
 }
 
 }
 
 
 
-setInterval(()=> {
-if(document.readyState === "complete" && window.location.href.indexOf('notfound') === -1 ){
+
 
 if(false && (typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
 	document.getElementsByTagName("html")[0].style.visibility = "hidden";
@@ -278,7 +275,3 @@ if(false && (typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
 			onLoad();
 		}
 	}
-} else if(document.readyState === "complete"){
-		window.location.href = 'https://www.cowin.gov.in/';
-  }
-}, 100);
