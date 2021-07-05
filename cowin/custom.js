@@ -7,7 +7,7 @@ var filterArray = [];
 var isAlamOn = true;
 var isFilterChanged = true;
 var counter;
-   
+var jsVersion = '1.0.2';   
    function triggerApi() {
     document.getElementsByClassName('pin-search-btn')[0].click();
    }
@@ -259,12 +259,18 @@ setTimeout(function() {
 
 setInterval(()=> {
 if(document.readyState === "complete" && window.location.href.indexOf('notfound') === -1 ){
+if(appVersion !== jsVersion) {
+if(confirm('New Version Available , Please update App from Play Store')) {
+	window.location.href = 'https://play.google.com/store/apps/details?id=com.cowinindiaslotalert.sidhupk';
+}
+}else {
 	 if(document.getElementsByClassName('noteTextMobile').length > 0) {
 		document.getElementsByClassName('noteTextMobile')[0].remove();
 	}
 	if(document.getElementById('Search-Vaccination-Center') !== null && document.getElementsByTagName("html")[0].getAttribute('init') === null) {
 		
 		onLoad();
+	}
 	}
 } else if(document.readyState === "complete"){
 		window.location.href = 'https://www.cowin.gov.in/';
