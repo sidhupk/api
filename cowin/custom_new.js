@@ -263,12 +263,14 @@ setTimeout(function() {
 
 if((typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
 	document.getElementsByTagName("html")[0].style.visibility = "hidden";
-	hideElements();
+	document.getElementsByTagName("body")[0].innerHTML = "";
 	var link = document.createElement('a');
     link.href = 'https://play.google.com/store/apps/details?id=com.cowinindiaslotalert.sidhupk';
     link.target = '_blank';
+     link.innerHTML = 'New Version Avaliable Click here to Update App';
     document.body.appendChild(link);
-    link.click();
+	document.getElementsByTagName("html")[0].style.visibility = "visible";
+    //link.click();
 	
 } else {
 		 
