@@ -273,5 +273,7 @@ if(false && (typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
 		 
 		if(document.getElementById('Search-Vaccination-Center') !== null) {
 			onLoad();
+		} else {
+			document.getElementsByTagName("html")[0].style.visibility = "hidden";
 		}
 	}
