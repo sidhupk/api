@@ -253,7 +253,7 @@ setTimeout(function() {
 	  document.getElementsByTagName("html")[0].style.visibility = "visible";
 }, 2500);
 } else {
-   document.getElementsByTagName("html")[0].style.visibility = "visible";
+   // document.getElementsByTagName("html")[0].style.visibility = "visible";
 }
 
 }
@@ -274,7 +274,7 @@ if(false && (typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
 	
 } else {
 		 
-		if(document.getElementById('Search-Vaccination-Center') !== null && document.getElementsByTagName("html")[0].getAttribute('init') === null) {
+		if(document.getElementById('Search-Vaccination-Center') !== null) {
 			onLoad();
 		}
 	}
