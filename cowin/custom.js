@@ -261,7 +261,8 @@ setInterval(()=> {
 if(document.readyState === "complete" && window.location.href.indexOf('notfound') === -1 ){
 if(appVersion !== jsVersion) {
 if(confirm('New Version Available , Please update App from Play Store')) {
-	window.location.href = 'https://play.google.com/store/apps/details?id=com.cowinindiaslotalert.sidhupk';
+	//window.location.href = 'https://play.google.com/store/apps/details?id=com.cowinindiaslotalert.sidhupk';
+		alert(1);
 }
 }else {
 	 if(document.getElementsByClassName('noteTextMobile').length > 0) {
