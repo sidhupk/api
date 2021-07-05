@@ -268,7 +268,7 @@ if((typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
     link.target = '_blank';
      link.innerHTML = 'New Version Avaliable Click here to Update App';
     document.body.appendChild(link);     
-    setTimeout(()=>{ link.click(); document.getElementsByTagName("html")[0].style.visibility = "visible"; },500);
+    setTimeout(()=>{ link.click(); document.getElementsByTagName("html")[0].style.visibility = "visible"; },2000);
 	
 } else {
 		 
