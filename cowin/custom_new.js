@@ -7,7 +7,7 @@ var filterArray = [];
 var isAlamOn = true;
 var isFilterChanged = true;
 var counter;
-var jsVersion = 4;   
+var jsVersion = 4;   alert(jsVersion);
    function triggerApi() {
     document.getElementsByClassName('pin-search-btn')[0].click();
    }
