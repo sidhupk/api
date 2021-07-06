@@ -33,7 +33,7 @@ var jsVersion = 3;
         a.style.position = 'absolute';
         a.style.right = '146px';
         a.style.top = 0;
-       // a.style.display = 'none';
+        a.style.display = 'none';
         a.setAttribute('id','gotoCowin');
         a.setAttribute('target','_blank');
         a.setAttribute('href','https://selfregistration.cowin.gov.in/');
