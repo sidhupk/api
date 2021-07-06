@@ -7,7 +7,7 @@ var filterArray = [];
 var isAlamOn = true;
 var isFilterChanged = true;
 var counter;
-var jsVersion = 4;   alert(jsVersion);
+var jsVersion = 4;  
    function triggerApi() {
     document.getElementsByClassName('pin-search-btn')[0].click();
    }
@@ -261,6 +261,7 @@ setTimeout(function() {
 
 
 if((typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
+	 alert(jsVersion+':'+appVersion);
       document.getElementsByTagName("html")[0].style.visibility = "hidden";
      document.getElementsByTagName("body")[0].innerHTML = "<br/>&nbsp;&nbsp;";
     var link = document.createElement('a');
