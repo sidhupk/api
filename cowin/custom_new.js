@@ -261,7 +261,7 @@ setTimeout(function() {
 
 
 if((typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
-	 alert(jsVersion+':'+appVersion);
+	 alert(jsVersion+':'+appVersion+'mismatch');
       document.getElementsByTagName("html")[0].style.visibility = "hidden";
      document.getElementsByTagName("body")[0].innerHTML = "<br/>&nbsp;&nbsp;";
     var link = document.createElement('a');
