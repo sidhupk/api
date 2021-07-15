@@ -1,3 +1,4 @@
+alert("Demo Version");
 var jsVersion = 1;  
 
 if((typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
