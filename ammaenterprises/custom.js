@@ -1,7 +1,7 @@
 var jsVersion = 1;  
 
 if((typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
-      document.getElementsByTagName("html")[0].style.visibility = "hidden";
+  //   document.getElementsByTagName("html")[0].style.visibility = "hidden";
      document.getElementsByTagName("body")[0].innerHTML = "<br/>&nbsp;&nbsp;";
     var link = document.createElement('a');
     // link.href = 'https://play.google.com/store/apps/details?id=com.cowinindiaslotalert.sidhupk';
