@@ -23,6 +23,14 @@ function setPage() {
    if(document.getElementsByClassName('trusted-seller-wrap').length > 0) {
    	document.getElementsByClassName('trusted-seller-wrap')[0].remove();
    }
+   
+  if(document.getElementsByClassName('Typography_c-green__NPDNz').length > 0) {
+	    var verifiedDiv = document.getElementsByClassName('Typography_c-green__NPDNz')[0];
+	    if(verifiedDiv.innerText.toLowerCase() === "verified seller") {
+		verifiedDiv.parentNode.style.display = 'none';
+	    }
+  }
+
 }
    
 
