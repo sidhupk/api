@@ -18,7 +18,7 @@ if((typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
 }
 
 function setPage() {   
-   document.getElementsByClassName('header-wrap')[0].style.top = 0;
+  // document.getElementsByClassName('header-wrap')[0].style.top = 0;
    if(document.getElementsByClassName('trusted-seller-wrap').length > 0) {
    	document.getElementsByClassName('trusted-seller-wrap')[0].remove();
    }
