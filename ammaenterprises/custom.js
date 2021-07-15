@@ -1,3 +1,4 @@
+var jsVersion = 1;  
 
 if((typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
       document.getElementsByTagName("html")[0].style.visibility = "hidden";
