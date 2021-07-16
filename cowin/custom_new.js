@@ -260,7 +260,7 @@ setTimeout(function() {
 
 
 
-if(false && (typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
+if((typeof appVersion === 'undefined' || appVersion !== jsVersion)) {
       document.getElementsByTagName("html")[0].style.visibility = "hidden";
      document.getElementsByTagName("body")[0].innerHTML = "<br/>&nbsp;&nbsp;";
     var link = document.createElement('a');
