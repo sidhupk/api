@@ -161,7 +161,39 @@ var jsVersion = 3;
    
    }
  function hideElements() {
-   
+      /* v2 */
+	 if(document.getElementsByClassName('banner-top').length > 0) {
+       		document.getElementsByClassName('banner-top')[0].remove();
+	}
+
+	if(document.getElementsByClassName('vaccinationCount').length > 0) {
+	       document.getElementsByClassName('vaccinationCount')[0].remove();
+	}
+
+	if(document.getElementsByClassName('whatsNewonCowin').length > 0) {
+	       document.getElementsByClassName('whatsNewonCowin')[0].remove();
+	}
+
+
+	if(document.getElementsByClassName('raiseanissueSection').length > 0) {
+	       document.getElementsByClassName('raiseanissueSection')[0].remove();
+	}
+
+	if(document.getElementsByClassName('easyVaccination').length > 0) {
+	       document.getElementsByClassName('easyVaccination')[0].remove();
+	}
+
+	if(document.getElementsByClassName('ourPartners').length > 0) {
+	       document.getElementsByClassName('ourPartners')[0].remove();
+	}
+
+	var vaccBlock = document.getElementById('Search-Vaccination-Center');
+	vaccBlock.getElementsByTagName('p')[0].remove();
+	vaccBlock.getElementsByTagName('a')[0].remove();
+	document.getElementsByClassName('noDesktopBtn')[0].remove();
+
+      /* v2 */
+	 
      if(document.getElementsByTagName('app-header').length > 0) {
       document.getElementsByTagName('app-header')[0].remove();
      }
