@@ -22,7 +22,7 @@ var jsVersion = 3;
         a.setAttribute('id','shareApp');
         a.setAttribute('target','_blank');
         a.setAttribute('href','https://api.whatsapp.com/send?text=Download Cowin India Slot Alert App Here - https://play.google.com/store/apps/details?id=com.cowinindiaslotalert.sidhupk');
-        document.getElementsByClassName('mainContainer')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
+        document.getElementsByClassName('web_homePage')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
       }
    }
 
@@ -37,7 +37,7 @@ var jsVersion = 3;
         a.setAttribute('id','gotoCowin');
         a.setAttribute('target','_blank');
         a.setAttribute('href','https://selfregistration.cowin.gov.in/');
-        document.getElementsByClassName('mainContainer')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
+        document.getElementsByClassName('web_homePage')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
       }
    }
    function toggleAlarm() {
@@ -67,7 +67,7 @@ var jsVersion = 3;
         // a.setAttribute('target','_blank');
         // a.setAttribute('onclick','toggleAlarm();return false;');
 		// a.setAttribute('href','#');
-        document.getElementsByClassName('mainContainer')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
+        document.getElementsByClassName('web_homePage')[0].insertBefore(a, document.getElementsByTagName('router-outlet')[0]);
         document.getElementById("alarmIcon").addEventListener("click", function(e) {
 			toggleAlarm()
 		});
@@ -108,7 +108,7 @@ var jsVersion = 3;
         div.style.textAlign = 'left';
 		div.style.minHeight = '25px';
 		div.style.marginLeft = '4px';
-        document.getElementsByClassName('mainContainer')[0].insertBefore(div, document.getElementsByTagName('router-outlet')[0]);
+        document.getElementsByClassName('web_homePage')[0].insertBefore(div, document.getElementsByTagName('router-outlet')[0]);
       }
      document.getElementById('counterTime').innerHTML = count;
     }
