@@ -188,9 +188,9 @@ var jsVersion = 3;
 	}
 
 	var vaccBlock = document.getElementById('Search-Vaccination-Center');
-	vaccBlock.getElementsByTagName('p')[0].remove();
-	vaccBlock.getElementsByTagName('a')[0].remove();
-	document.getElementsByClassName('noDesktopBtn')[0].remove();
+	if(vaccBlock && vaccBlock.getElementsByTagName('p')) { vaccBlock.getElementsByTagName('p')[0].remove(); }
+	if(vaccBlock && vaccBlock.getElementsByTagName('a')) { vaccBlock.getElementsByTagName('a')[0].remove(); }
+	if(vaccBlock && vaccBlock.getElementsByClassName('noDesktopBtn')) { document.getElementsByClassName('noDesktopBtn')[0].remove(); }
 
       /* v2 */
 	 
@@ -225,6 +225,13 @@ var jsVersion = 3;
     if(document.getElementsByClassName('flashNewsSection').length > 0) {
        document.getElementsByClassName('flashNewsSection')[0].remove();
     }
+     if(document.getElementsByClassName('vaccinationDrive').length > 0) {
+       document.getElementsByClassName('vaccinationDrive')[0].remove();
+    }
+     if(document.getElementsByClassName('bookslotBtn').length > 0) {
+       document.getElementsByClassName('bookslotBtn')[0].remove();
+    }		 
+    
 	if(document.querySelectorAll('h1.accessibility-plugin-ac').length > 0) { 
 		document.querySelectorAll('h1.accessibility-plugin-ac')[0].remove();
 	}
