@@ -188,9 +188,9 @@ var jsVersion = 3;
 	}
 
 	var vaccBlock = document.getElementById('Search-Vaccination-Center');
-	if(vaccBlock && vaccBlock.getElementsByTagName('p')) { vaccBlock.getElementsByTagName('p')[0].remove(); }
-	if(vaccBlock && vaccBlock.getElementsByTagName('a')) { vaccBlock.getElementsByTagName('a')[0].remove(); }
-	if(vaccBlock && vaccBlock.getElementsByClassName('noDesktopBtn')) { document.getElementsByClassName('noDesktopBtn')[0].remove(); }
+	if(vaccBlock && vaccBlock.getElementsByTagName('p').length > 0) { vaccBlock.getElementsByTagName('p')[0].remove(); }
+	if(vaccBlock && vaccBlock.getElementsByTagName('a').length > 0) { vaccBlock.getElementsByTagName('a')[0].remove(); }
+	if(vaccBlock && vaccBlock.getElementsByClassName('noDesktopBtn').length > 0) { document.getElementsByClassName('noDesktopBtn')[0].remove(); }
 
       /* v2 */
 	 
@@ -216,6 +216,15 @@ var jsVersion = 3;
        document.getElementsByClassName('vaccinaitonDriveSection')[0].remove();
     }
 	
+    if(document.getElementsByClassName('sharevaccinationsection').length > 0) {
+      document.getElementsByClassName('sharevaccinationsection')[0].remove();
+   }
+
+   if(document.getElementsByClassName('internationalcertificates').length > 0) {
+      document.getElementsByClassName('internationalcertificates')[0].remove();
+   }
+   
+
     if(document.getElementsByClassName('faqSection').length > 0) {
        document.getElementsByClassName('faqSection')[0].remove();
     }
